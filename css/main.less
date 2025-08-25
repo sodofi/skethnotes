@@ -667,6 +667,7 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
+  display: none;
   @media @smartphones {
     display: none;
     height: 100%;
@@ -674,7 +675,7 @@ body {
   }
   &-mobile {
     @media @smartphones {
-      display: inherit;
+      display: none;
       background-image: url('https://dwvo2npct47gg.cloudfront.net/images/border-compressed.png');
     }
   }
@@ -1129,9 +1130,10 @@ body {
 .landing-start-text {
   cursor: pointer;
   font-weight: normal;
+  font-size: 2em;
   .no-select();
   @media @smartphones {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
